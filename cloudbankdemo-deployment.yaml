@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: cloudbankdemo
+  name: cloudbankdemo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cloudbankdemo
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: cloudbankdemo
+    spec:
+      containers:
+      - image: cloudbankdemocr.azurecr.io/cloudbankdemocr.azurecr.io:97
+        name: cloudbankdemocr-azurecr-io-ss7nt
+        resources: {}
+status: {}
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: cloudbankdemo
+  name: cloudbankdemo
+spec:
+  ports:
+  - name: 8080-8080
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: cloudbankdemo
+  type: LoadBalancer
+status:
+  loadBalancer: {}
