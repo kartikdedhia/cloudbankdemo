@@ -18,7 +18,7 @@ spec:
         app: cloudbankdemo
     spec:
       containers:
-      - image: cloudbankdemocr.azurecr.io/cloudbankdemocr.azurecr.io:97
+      - image: cloudbankdemocr.azurecr.io/cloudbankdemocr.azurecr.io:latest
         name: cloudbankdemocr-azurecr-io-ss7nt
         resources: {}
 status: {}
