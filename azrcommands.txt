@@ -1,0 +1,3 @@
+kubectl run cloudbankdemo-docker --image=myimagescbd.azurecr.io/cloudbankdemo:latest
+
+kubectl expose pod cloudbankdemo-docker --type=LoadBalancer --port=80 --target-port=8080
