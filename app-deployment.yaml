@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
         - name: cloudbankdemo-app 
-          image: cloudbankdemo:0.0.1-SNAPSHOT # Image that will be used to containers in the cluster
+          image: myimagescbd.azurecr.io/myimagescbd.azurecr.io:latest # Image that will be used to containers in the cluster
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080 # The port that the container is running on in the cluster

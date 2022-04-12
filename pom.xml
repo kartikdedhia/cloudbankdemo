@@ -14,9 +14,15 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>cloudbankdemo</name>
 	<description>Demo Bank project for Azure CI/CD Spring Boot</description>
+
 	<properties>
+		<!-- Note: If your ACR name contains upper case characters, be sure to 
+			convert them to lower case characters. -->
+		<docker.image.prefix>myimagescbd.azurecr.io</docker.image.prefix>
+		<jib-maven-plugin.version>2.5.2</jib-maven-plugin.version>
 		<java.version>1.8</java.version>
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -29,7 +35,7 @@
 			<scope>test</scope>
 		</dependency>
 
-	<!-- Swagger UI -->
+		<!-- Swagger UI -->
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-ui</artifactId>
@@ -42,6 +48,20 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<artifactId>jib-maven-plugin</artifactId>
+				<groupId>com.google.cloud.tools</groupId>
+				<version>${jib-maven-plugin.version}</version>
+				<configuration>
+					<from>
+						<image>mcr.microsoft.com/java/jdk:8-zulu-alpine</image>
+					</from>
+					<to>
+						<image>${docker.image.prefix}/${project.artifactId}</image>
+					</to>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
