@@ -1,3 +1,5 @@
+br\com\peers\cloudbankdemo\repository\ClienteRepositoryImpl.class
 br\com\peers\cloudbankdemo\service\ClienteService.class
 br\com\peers\cloudbankdemo\bean\Cliente.class
 br\com\peers\cloudbankdemo\Application.class
+br\com\peers\cloudbankdemo\repository\ClienteRepository.class
