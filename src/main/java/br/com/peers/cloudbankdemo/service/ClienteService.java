@@ -23,8 +23,6 @@ public class ClienteService {
 	@Autowired
 	private ClienteRepository clienteRepository;
 	
-	public ClienteService() {}
-	
 	@GetMapping
 	public List<Cliente> list() {	
 		return clienteRepository.list();

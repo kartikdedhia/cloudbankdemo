@@ -13,7 +13,7 @@ import br.com.peers.cloudbankdemo.bean.Cliente;
 import br.com.peers.cloudbankdemo.service.ClienteService;
 
 @SpringBootTest
-public class ClienteServiceTest {
+class ClienteServiceTest {
 	
 	@Autowired
 	ClienteService clienteService;

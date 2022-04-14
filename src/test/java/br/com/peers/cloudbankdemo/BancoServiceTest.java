@@ -14,7 +14,7 @@ import br.com.peers.cloudbankdemo.bean.Banco;
 import br.com.peers.cloudbankdemo.service.BancoService;
 
 @SpringBootTest
-public class BancoServiceTest {
+class BancoServiceTest {
 	
 	@Autowired
 	BancoService bancoService;

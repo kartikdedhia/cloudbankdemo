@@ -13,10 +13,10 @@ import br.com.peers.cloudbankdemo.bean.Banco;
 @Repository
 public class BancoRepositoryImpl implements BancoRepository {
 	
-	private Map<String, Banco> bancos = new HashMap();
+	private Map<String, Banco> bancos = new HashMap<>();
 
 	public List<Banco> list() {	
-		return new ArrayList<Banco>(this.bancos.values());
+		return new ArrayList<>(this.bancos.values());
 	}
 	
 	public Banco get(String id) {	

@@ -23,8 +23,6 @@ public class BancoService {
 	@Autowired
 	private BancoRepository bancoRepository;
 	
-	public BancoService() {}
-	
 	@GetMapping
 	public List<Banco> list() {	
 		return bancoRepository.list();
