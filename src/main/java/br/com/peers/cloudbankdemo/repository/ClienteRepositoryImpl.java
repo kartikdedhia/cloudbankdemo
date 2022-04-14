@@ -13,7 +13,7 @@ import br.com.peers.cloudbankdemo.bean.Cliente;
 @Repository
 public class ClienteRepositoryImpl implements ClienteRepository {
 	
-	private Map<String, Cliente> clientes = new HashMap<String, Cliente>();
+	private Map<String, Cliente> clientes = new HashMap();
 
 	public List<Cliente> list() {	
 		return new ArrayList<Cliente>(this.clientes.values());
