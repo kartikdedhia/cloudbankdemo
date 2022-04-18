@@ -77,7 +77,7 @@ class ContaServiceTest {
 		banco = bancoService.add(banco);
 
 		Banco banco1 = new Banco("341", "Banco Itau");
-		banco1 = bancoService.add(banco);
+		banco1 = bancoService.add(banco1);
 		
 		Conta conta = new Conta(banco, cliente, 123456789L, 0);
 		conta = contaService.add(conta);
@@ -85,7 +85,7 @@ class ContaServiceTest {
 		Conta contaUpd = contaService.get(conta.getId());
 		contaUpd.setBanco(banco1);
         
-        Conta contaUpdated = contaService.get(conta.getId());
+        Conta contaUpdated = contaService.edit(contaUpd);
         
         assertEquals("Banco Itau", contaUpdated.getBanco().getNome());
         

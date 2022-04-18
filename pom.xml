@@ -80,21 +80,6 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 
-<!--
-			<plugin>
-				<artifactId>jib-maven-plugin</artifactId>
-				<groupId>com.google.cloud.tools</groupId>
-				<version>${jib-maven-plugin.version}</version>
-				<configuration>
-					<from>
-						<image>mcr.microsoft.com/java/jdk:8-zulu-alpine</image>
-					</from>
-					<to>
-						<image>${docker.image.prefix}/${project.artifactId}</image>
-					</to>
-				</configuration>
-			</plugin>
--->
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
@@ -118,17 +103,5 @@
 		</plugins>
 	</build>
 
-	<repositories>
-		<repository>
-			<id>peersconsulting</id>
-			<url>https://pkgs.dev.azure.com/peersconsulting/_packaging/peersconsulting/maven/v1</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
 
 </project>
