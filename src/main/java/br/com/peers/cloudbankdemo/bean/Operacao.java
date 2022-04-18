@@ -24,32 +24,23 @@ public class Operacao extends Entity {
 		return conta;
 	}
 
-	public void setConta(Conta conta) {
-		this.conta = conta;
-	}
-
 	public Date getDataOperacao() {
 		return dataOperacao;
-	}
-
-	public void setDataOperacao(Date dataOperacao) {
-		this.dataOperacao = dataOperacao;
 	}
 
 	public Double getValor() {
 		return valor;
 	}
 
-	public void setValor(Double valor) {
-		this.valor = valor;
-	}
-
 	public String getTipoOperacao() {
 		return tipoOperacao;
 	}
 
-	public void setTipoOperacao(String tipoOperacao) {
-		this.tipoOperacao = tipoOperacao;
+	@Override
+	public String toString() {
+		return "Operacao [conta=" + getConta() + ", dataOperacao=" + getDataOperacao() + ", valor=" + getValor() + ", tipoOperacao="
+				+ getTipoOperacao() + "]";
 	}
+	
 	
 }
