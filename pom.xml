@@ -80,6 +80,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 
+<!--
 			<plugin>
 				<artifactId>jib-maven-plugin</artifactId>
 				<groupId>com.google.cloud.tools</groupId>
@@ -93,7 +94,7 @@
 					</to>
 				</configuration>
 			</plugin>
-
+-->
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
