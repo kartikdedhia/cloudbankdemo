@@ -1,1 +1,4 @@
+br\com\peers\cloudbankdemo\ContaServiceTest.class
 br\com\peers\cloudbankdemo\ClienteServiceTest.class
+br\com\peers\cloudbankdemo\OperacaoServiceTest.class
+br\com\peers\cloudbankdemo\BancoServiceTest.class
