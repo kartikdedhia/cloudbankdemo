@@ -1,5 +1,6 @@
 package br.com.peers.cloudbankdemo;
 
+import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -79,7 +80,11 @@ class ContaServiceTest {
 		Banco banco1 = new Banco("341", "Banco Itau");
 		banco1 = bancoService.add(banco1);
 		
-		Conta conta = new Conta(banco, cliente, 123456789L, 0);
+		Conta conta = new Conta();
+		conta.setBanco(banco);
+		conta.setCliente(cliente);
+		conta.setNumero(123456789L);
+		conta.setDv(0);
 		conta = contaService.add(conta);
 
 		Conta contaUpd = contaService.get(conta.getId());
@@ -87,7 +92,11 @@ class ContaServiceTest {
         
         Conta contaUpdated = contaService.edit(contaUpd);
         
-        assertEquals("Banco Itau", contaUpdated.getBanco().getNome());
+        assertAll(
+      	      "heading",
+      	      () -> assertEquals("Banco Itau", contaUpdated.getBanco().getNome()),
+      	      () -> assertEquals("Anderson Fonseca", contaUpdated.getCliente().getNome())
+      	    );
         
 	}
 	
