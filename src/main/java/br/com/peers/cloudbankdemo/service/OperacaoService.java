@@ -38,6 +38,8 @@ public class OperacaoService {
 		return operacaoRepository.add(operacao);
 	}
 	
+<<<<<<< HEAD
+=======
 	@PutMapping
 	public Operacao edit(@RequestBody Operacao operacao) {
 		return operacaoRepository.edit(operacao);
@@ -48,4 +50,5 @@ public class OperacaoService {
 		operacaoRepository.remove(id);
 	}
 	
+>>>>>>> branch 'main' of https://github.com/andersonfonseka/cloudbankdemo.git
 }

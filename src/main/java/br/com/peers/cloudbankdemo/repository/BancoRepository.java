@@ -13,9 +13,9 @@ public interface BancoRepository {
 	
 	public Banco get(String id);
 	
-	public Banco add(Banco Banco);
+	public Banco add(Banco banco);
 	
-	public Banco edit(Banco Banco);
+	public Banco edit(Banco banco);
 	
 	public void remove(String id);
 

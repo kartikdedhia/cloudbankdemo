@@ -28,6 +28,8 @@ public class OperacaoRepositoryImpl implements OperacaoRepository {
 		operacaos.put(operacao.getId(), operacao);
 		return operacao;
 	}
+<<<<<<< HEAD
+=======
 	
 	public Operacao edit(Operacao operacao) {
 		
@@ -44,5 +46,6 @@ public class OperacaoRepositoryImpl implements OperacaoRepository {
 			operacaos.remove(id);
 		}
 	}
+>>>>>>> branch 'main' of https://github.com/andersonfonseka/cloudbankdemo.git
 
 }
